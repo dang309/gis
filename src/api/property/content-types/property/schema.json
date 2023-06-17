@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "population": {
+      "type": "integer"
+    },
+    "tested": {
+      "type": "integer"
+    },
+    "infected": {
+      "type": "integer"
+    },
+    "deaths": {
+      "type": "integer"
+    },
+    "gdp": {
+      "type": "integer"
+    },
+    "state": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::state.state",
+      "mappedBy": "property"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cases",
+  "info": {
+    "singularName": "case",
+    "pluralName": "cases",
+    "displayName": "Case",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "infected": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "death": {
+      "type": "integer"
+    }
+  }
+}
