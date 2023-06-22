@@ -33,6 +33,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::case.case"
+    },
+    "geometry": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::geometry.geometry",
+      "mappedBy": "state"
     }
   }
 }

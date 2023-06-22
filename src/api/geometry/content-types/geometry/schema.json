@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "geometries",
+  "info": {
+    "singularName": "geometry",
+    "pluralName": "geometries",
+    "displayName": "Geometry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "state": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::state.state",
+      "inversedBy": "geometry"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Polygon",
+        "MultiPolygon"
+      ],
+      "default": "Polygon"
+    },
+    "zones": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::zone.zone"
+    }
+  }
+}

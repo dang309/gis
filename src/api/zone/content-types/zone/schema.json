@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zones",
+  "info": {
+    "singularName": "zone",
+    "pluralName": "zones",
+    "displayName": "Zone"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "points": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::point.point"
+    }
+  }
+}
